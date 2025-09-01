@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Cards Example - Desk Tidy Project</title>
+  <link rel="stylesheet" href="image-cards.css">
+  <style>
+    /* Basic page styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    h2 {
+      color: #333;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .example-section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Cards Example</h1>
+    
+    <p>This demonstrates the image cards CSS with 40mm sizing, proper semantics, and responsive layout.</p>
+    
+    <div class="example-section">
+      <h2>Single Image Card</h2>
+      <p>Individual image card with caption:</p>
+      
+      <div class="image-card">
+        <figure>
+          <img src="desk tidy picture.png" alt="Desk tidy project">
+          <figcaption>Desk Tidy Project</figcaption>
+        </figure>
+      </div>
+    </div>
+    
+    <div class="example-section">
+      <h2>Side-by-Side Image Cards</h2>
+      <p>Multiple images in a flex container:</p>
+      
+      <div class="image-cards">
+        <div class="image-card">
+          <figure>
+            <img src="desk tidy picture.png" alt="Desk tidy project view 1">
+            <figcaption>Front View</figcaption>
+          </figure>
+        </div>
+        
+        <div class="image-card">
+          <figure>
+            <img src="desk tidy picture.png" alt="Desk tidy project view 2">
+            <figcaption>Side View</figcaption>
+          </figure>
+        </div>
+        
+        <div class="image-card">
+          <figure>
+            <img src="desk tidy picture.png" alt="Desk tidy project view 3">
+            <figcaption>Top View</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    
+    <div class="example-section">
+      <h2>Construction Progress</h2>
+      <p>Before and after comparison:</p>
+      
+      <div class="image-cards">
+        <div class="image-card">
+          <figure>
+            <img src="desk tidy picture.png" alt="Initial design">
+            <figcaption>Initial Design</figcaption>
+          </figure>
+        </div>
+        
+        <div class="image-card">
+          <figure>
+            <img src="desk tidy picture.png" alt="Final product">
+            <figcaption>Final Product</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    
+    <div class="example-section">
+      <h2>Technical Notes</h2>
+      <ul>
+        <li><strong>40mm sizing:</strong> Uses CSS absolute length units for consistent sizing</li>
+        <li><strong>No distortion:</strong> <code>object-fit: contain</code> keeps images proportional</li>
+        <li><strong>Proper semantics:</strong> Uses <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for accessibility</li>
+        <li><strong>Responsive:</strong> Adapts to different screen sizes</li>
+        <li><strong>Print-friendly:</strong> Optimized for PDF generation</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
